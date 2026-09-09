@@ -1,6 +1,6 @@
-import type { Variants, Transition } from "framer-motion";
+import type { Variants } from "framer-motion";
 
-export const auraEase: Transition["ease"] = [0.16, 1, 0.3, 1];
+export const auraEase = [0.16, 1, 0.3, 1] as const;
 
 export const fadeUp: Variants = {
   hidden: { opacity: 0, y: 24, filter: "blur(6px)" },
